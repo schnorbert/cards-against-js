@@ -1,0 +1,88 @@
+$main-color: #000000;
+$main-inverted: #ffffff;
+$secondary-color: #808080;
+
+body, html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, serif;
+}
+
+#nav {
+  background-color: $main-color;
+}
+
+#nav > #title {
+  color: $main-inverted;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#card-table {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#caesar-hand {
+  display: flex;
+  flex-direction: row;
+}
+
+#player-hand {
+  display: flex;
+  flex-direction: row;
+}
+
+#timer {
+  border-top: 1px solid #323232;
+  width: 100%;
+  position: relative;
+  height: 30px;
+  background-color: grey;
+
+  #timer-text {
+    display: none;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    font-size: 18px;
+    height: 30px;
+    color: white;
+  }
+
+  #timer-slider {
+    position: absolute;
+    height: 30px;
+    background-color: black;
+  }
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  width: 140px;
+  height: 200px;
+}
+
+.black-card {
+  background-color: black;
+  color: white;
+}
+
+.placeholder-card {
+  background-color: white;
+  border: 1px dashed grey;
+  color: grey;
+}
+
+.white-card {
+  background-color: white;
+  color: black;
+}

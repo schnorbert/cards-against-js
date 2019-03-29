@@ -1,0 +1,27 @@
+{
+  "name": "sch-clikker",
+  "version": "1.0.0",
+  "private": true,
+  "author": "kir-dev <kir-dev@sch.bme.hu>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --watch --mode development --config webpack.config.js",
+    "test": "echo 'All test passed. Good job! :)'"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "7",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^2.1.0",
+    "hotkeys-js": "^3.5.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "socket.io": "^2.2.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.3.0"
+  }
+}
