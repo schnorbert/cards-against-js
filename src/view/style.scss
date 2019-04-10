@@ -14,11 +14,12 @@ body, html {
   background-color: $main-color;
 }
 
-#nav > #title {
+#title {
   color: $main-inverted;
   padding: 10px;
   font-size: 20px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 #card-table {
@@ -28,7 +29,7 @@ body, html {
   flex-direction: column;
 }
 
-#caesar-hand {
+#czar-hand {
   display: flex;
   flex-direction: row;
 }
@@ -67,6 +68,7 @@ body, html {
   border-radius: 10px;
   margin: 5px;
   padding: 10px;
+  min-width: 140px;
   width: 140px;
   height: 200px;
 }

@@ -3,19 +3,31 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     "mode": "development",
-    "entry": "./src/index.js",
+    "entry": {
+        index: "./src/index.js",
+        game: "./src/game.js"
+    },
     "output": {
-        "path": __dirname+'/dist',
+        "path": __dirname + '/dist',
         "filename": "[name].js"
     },
     "plugins": [
-      new CopyWebpackPlugin( [
-        {
-          "from": "src/view/index.html",
-          "to": "./",
-          fromType: 'glob'
-        }
-      ] )
+        new CopyWebpackPlugin([
+            {
+                "from": "src/view/index.html",
+                "to": "./",
+                chunks: ['index'],
+                fromType: 'glob'
+            }
+        ]),
+        new CopyWebpackPlugin([
+            {
+                "from": "src/view/game.html",
+                "to": "./",
+                chunks: ['game'],
+                fromType: 'glob'
+            }
+        ]),
     ],
     "module": {
         "rules": [

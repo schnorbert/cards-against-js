@@ -4,10 +4,10 @@ import { WhiteCard } from "../components/white_card";
 
 export class GameController {
     constructor(){
-        this.caesar = document.getElementById("caesar-hand");
+        this.czar = document.getElementById("czar-hand");
         this.player_hand = document.getElementById("player-hand");
 
-        this.selectBlackCard(this.caesar, cards.blackCards);
+        this.selectBlackCard(this.czar, cards.blackCards);
         this.dealWhiteCards(this.player_hand, cards.whiteCards, 5);
     }
 
