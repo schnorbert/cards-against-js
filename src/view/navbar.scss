@@ -1,0 +1,44 @@
+$main-color: #000000;
+$main-inverted: #ffffff;
+$secondary-color: #222222;
+$highlight-color: #333333;
+
+#nav {
+  background-color: $main-color;
+  min-height: 45px;
+  height: 45px;
+  color: $main-inverted;
+  display: flex;
+
+  * {
+    padding: 10px;
+    font-size: 21.5px;
+    font-weight: bold;
+  }
+}
+
+#title {
+  flex-grow: 0;
+  cursor: pointer;
+}
+
+.filler {
+  flex-grow: 1;
+}
+
+#login-btn {
+  flex-grow: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+
+  &:active {
+    background-color: $highlight-color;
+  }
+}
+
+#user {
+  flex-grow: 0;
+}

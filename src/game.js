@@ -1,6 +1,9 @@
+import './view/base.scss';
+import './view/navbar.scss';
+import './view/game.scss';
+
 import { GameController } from './controllers/game_controller';
 import { TimerBar } from "./controllers/timer_controller";
-import './view/style.scss';
 
 const controller = new GameController();
 const timer = new TimerBar(
