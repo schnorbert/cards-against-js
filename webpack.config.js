@@ -5,7 +5,8 @@ module.exports = {
     "mode": "development",
     "entry": {
         index: "./src/index.js",
-        game: "./src/game.js"
+        register: "./src/register.js",
+        game: "./src/game.js",
     },
     "output": {
         "path": __dirname + '/dist',
@@ -17,6 +18,14 @@ module.exports = {
                 "from": "src/view/index.html",
                 "to": "./",
                 chunks: ['index'],
+                fromType: 'glob'
+            }
+        ]),
+        new CopyWebpackPlugin([
+            {
+                "from": "src/view/register.html",
+                "to": "./",
+                chunks: ['register'],
                 fromType: 'glob'
             }
         ]),
