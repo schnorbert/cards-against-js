@@ -2,6 +2,8 @@ $main-color: #000000;
 $main-inverted: #ffffff;
 $secondary-color: #222222;
 $highlight-color: #333333;
+$dark-shadow: #191919;
+$light-shadow: #bebebe;
 
 #nav {
   background-color: $main-color;
@@ -26,7 +28,7 @@ $highlight-color: #333333;
   flex-grow: 1;
 }
 
-#login-btn {
+.right-btn {
   flex-grow: 0;
   cursor: pointer;
 

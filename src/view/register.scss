@@ -1,0 +1,156 @@
+$main-color: #000000;
+$main-inverted: #ffffff;
+$secondary-color: #222222;
+$highlight-color: #333333;
+$dark-shadow: #191919;
+$light-shadow: #bebebe;
+
+$border-color: $light-shadow;
+$basic-shadow: rgba(0, 0, 0, 0.25);
+$card-shadow: -15px 15px 0px 0px $basic-shadow;
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 0;
+  justify-content: center;
+
+  background: $highlight-color;
+}
+
+.black-card {
+  position: relative;
+  top: 15px;
+
+  margin: 0 20px;
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 420px;
+  max-height: 420px;
+
+  border: 1px solid black;
+  border-radius: 10px;
+  background: black;
+
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+
+  box-shadow: $card-shadow;
+  transform: rotate(-1deg);
+}
+
+.white-card {
+  background: transparent;
+  margin: 0 20px;
+  min-width: 300px;
+  max-width: 300px;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  input {
+    width: 100%;
+    outline: none;
+  }
+
+  input[type="text"], input[type="password"] {
+    border: none;
+  }
+
+  * {
+    background: white;
+    font-size: 18px;
+  }
+}
+
+.bottom-card {
+  position: relative;
+  height: 420px;
+
+  border-radius: 10px;
+  border: 1px solid $border-color;
+  padding: 15px;
+
+  box-shadow: $card-shadow;
+  transform: rotate(-2deg);
+}
+
+.second-card {
+  position: relative;
+  top: -430px;
+  height: 420px;
+
+  border-radius: 10px;
+  border: 1px solid $border-color;
+  padding: 15px;
+
+  box-shadow: $card-shadow;
+  transform: rotate(3deg);
+}
+
+.name-card {
+  position: relative;
+  top: -840px;
+  left: -5px;
+  height: 420px;
+
+  border-radius: 10px;
+  border: 1px solid $border-color;
+  padding: 15px;
+
+  box-shadow: $card-shadow;
+  transform: rotate(-2deg);
+}
+
+.email-card {
+  position: relative;
+  top: -1220px;
+  left: 5px;
+  height: 420px;
+
+  border-radius: 10px;
+  border: 1px solid $border-color;
+  padding: 15px;
+
+  box-shadow: $card-shadow;
+  transform: rotate(1deg);
+}
+
+.password-card {
+  position: relative;
+  top: -1610px;
+  left: 7px;
+  height: 420px;
+
+  border-radius: 10px;
+  border: 1px solid $border-color;
+  padding: 15px;
+
+  box-shadow: $card-shadow;
+  transform: rotate(-2.5deg);
+}
+
+.register-card {
+  position: relative;
+  top: -1990px;
+  left: 7px;
+
+  height: 420px;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  padding: 15px;
+
+  box-shadow: $card-shadow;
+  transform: rotate(1deg);
+}
+
+.register-btn {
+  margin: 5px 0 0 0;
+  background: $dark-shadow;
+  color: $main-inverted;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 10px;
+}

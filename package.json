@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --watch --mode development --config webpack.config.js",
+    "clean": "rm -r dist/",
     "test": "echo 'All test passed. Good job! :)'"
   },
   "dependencies": {
