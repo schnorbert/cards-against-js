@@ -153,4 +153,12 @@ $card-shadow: -15px 15px 0px 0px $basic-shadow;
   border: 1px solid black;
   border-radius: 3px;
   padding: 10px;
+
+  &:hover {
+    background: $secondary-color;
+  }
+
+  &:active {
+    background: $main-color;
+  }
 }
