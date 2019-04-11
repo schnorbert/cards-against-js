@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <script type="text/javascript" src="https://use.typekit.net/qzd1sci.js"></script>
+  <meta charset="UTF-8" />
+  <script
+    type="text/javascript"
+    src="https://use.typekit.net/qzd1sci.js"
+  ></script>
 </head>
 <html>
-<body>
+  <body>
     <div id="nav">
-        <div id="title" onclick="location.href = './index.html'">Cards Against Humanity</div>
-        <div class="filler"></div>
+      <div id="title" onclick="location.href = './index.html'">
+        Cards Against Humanity
+      </div>
+      <div class="filler"></div>
+      <div class="right-btn" onclick="location.href = 'index.html'">Home</div>
     </div>
 
     <div class="container">
-        <div class="black-card">
-            <div>Create an Account</div><br>
-            <div>Your username is <span>_______________________</span></div><br>
-            <div>Your email address is <span>___________________________</span></div><br>
-            <div>Your password is <span>_________________________</span></div>
+      <div class="black-card">
+        <div>Create an Account</div>
+        <br />
+        <div>Your username is <span>_______________________</span></div>
+        <br />
+        <div>
+          Your email address is <span>___________________________</span>
         </div>
+        <br />
+        <div>Your password is <span>_________________________</span></div>
+      </div>
 
-        <div class="white-card">
-            <div class="bottom-card"></div>
-            <div class="second-card"></div>
-            <div class="name-card">
-                <input type="text" placeholder="Username">
-            </div>
-            <div class="email-card">
-                <input type="text" placeholder="Email">
-            </div>
-            <div class="password-card">
-                <input type="password" placeholder="Password">
-            </div>
-            <div class="register-card">
-                <input type="button" class="register-btn" value="Register">
-            </div>
+      <div class="white-card">
+        <div class="bottom-card"></div>
+        <div class="second-card"></div>
+        <div class="name-card">
+          <input type="text" placeholder="Username" />
         </div>
+        <div class="email-card">
+          <input type="text" placeholder="Email" />
+        </div>
+        <div class="password-card">
+          <input type="password" placeholder="Password" />
+        </div>
+        <div class="register-card">
+          <input type="button" class="register-btn" value="Register" />
+        </div>
+      </div>
     </div>
 
     <!-- Including webpack packaged script file. DO NOT DELETE! -->
     <script src="./register.js"></script>
     <footer class="footer"></footer>
-</body>
+  </body>
 </html>
